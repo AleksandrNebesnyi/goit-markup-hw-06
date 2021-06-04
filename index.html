@@ -436,25 +436,24 @@
             <form class="form-field" >
                 <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
                 <label for="user-name">Имя</label>
-                <input type="text" name="user-name" id="user-name" autofocus >
+                <input type="text" name="user-name" id="user-name" autofocus required >
 
                 <label for="phone-number">Телефон</label>
-                <input type="tel" name="phone-number" id="phone-number">
+                <input type="tel" name="phone-number" id="phone-number" required>
 
                 <label for="mail">Почта</label>
                 <input type="email" name="mail" id="mail">
 
                 <label for="comment">Оставьте коментарий</label>
                 <textarea class="comment" name="comment" id="comment" rows="8" placeholder="Введите тест"></textarea>
-
-                <input type="checkbox" name="policy" id="policy" />
+                <div class="policy"> 
+                <input type="checkbox" name="policy" id="policy" required>
                 <label for="policy">Соглашаюсь с рассылкой и принимаю 
-                    <a href="">Условия договора</a>
-
-                </label>
+                    <a href=""> Условия договора</a> </label>
+               
+                </div>
                 
-                
-                <button type="submit">Отправить</button>
+                <button type="submit" class="form-modal-button" >Отправить</button>
 
 
 
