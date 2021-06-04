@@ -239,6 +239,20 @@ img {
 .advantages {
 }
 
+.advantages-main-title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .advantages-list {
   display: flex;
 }
@@ -868,6 +882,7 @@ textarea {
   color:rgba(117, 117, 117, 0.5)a;
 }
 .form-field textarea {
+
   margin-bottom: 20px;
   border-radius: 4px;  
   border: 1px solid rgba(33, 33, 33, 0.2);
