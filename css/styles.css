@@ -861,7 +861,6 @@ textarea {
 .form {
   display: flex;
   flex-flow: column;
-  margin-bottom: 40px;
 }
 .form-title {
   margin: 0;
