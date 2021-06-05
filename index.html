@@ -356,7 +356,7 @@
     <!-- Футер -->
     <footer class="footer">
     
-        <div class="container footer-container">
+        <div class="container">
            <div class="footer-adress">
             <a lang="en" href="./index.html" class="footer-logo"><span class="logo-part-first">Web</span><span class="logo-part-two">Studio</span></a>
     
@@ -406,25 +406,28 @@
             </div>
 
             <!-- Форма футер -->
+            <div>
             <form class="form-footer">
                 <h3 class="form-footer-title">Подишитесь на рассылку</h3>
                 <div class="form-container">
                 <label for="mail" ></label>
                 <input type="email" name="mail" id="mail" placeholder="E-mail" /> 
-                              
-                <button type="submit" >Подписатся
-                    <a href="" class="footer-form-icon" >
+                  
+                <a href="" class="footer-form-button link">
+                
+                    <button type="submit" >Подписатся                    
                         <svg class="footer-form-icon-svg" width="24" height="24">
                             <use href="./images/sprite.svg#icon-icon-send-form"></use>
                         </svg>
+                    </button>
                     </a>
-                </button>
+                
 
                 </div>
 
             </form>
 
-
+            </div>
 
         </div>
     
@@ -434,16 +437,33 @@
 
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <form class="form-field" >
+            <form class="form" >
                 <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
-                <label for="user-name">Имя</label>
-                <input type="text" name="user-name" id="user-name" autofocus required >
 
-                <label for="phone-number">Телефон</label>
-                <input type="tel" name="phone-number" id="phone-number" required>
+                <label class="form-field" >
+                <input type="text"  class="form-input" name="user-name"  autofocus required>
+                <span class="form-label">Имя</span>
+                <svg class="modal-icon">
+                    <use href="./images/sprite.svg#icon-person-form"></use>
+                </svg>
+                </label>
+               
+                <label class="form-field">
+                    <input type="tel" class="form-input" name="phone-number" autofocus required>
+                    <span class="form-label">Телефон</span>
+                    <svg class="modal-icon">
+                        <use href="./images/sprite.svg#icon-phone-form"></use>
+                    </svg>
+                </label>
 
-                <label for="mail">Почта</label>
-                <input type="email" name="mail" id="mail">
+                <label class="form-field">
+                    <input type="mail" class="form-input" name="mail" autofocus required>
+                    <span class="form-label">Почта</span>
+                    <svg class="modal-icon">
+                    <use href="./images/sprite.svg#icon-email-form"></use>
+                    </svg>
+                </label>
+ 
 
                 <label for="comment">Оставьте коментарий</label>
                 <textarea class="comment" name="comment" id="comment" rows="8" placeholder="Введите тест"></textarea>
